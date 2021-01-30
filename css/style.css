@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+           
+}
+
+.wrapper {
+    padding-top: 20px;
+    
+}
+.forcast {
+    padding-top: 10px;
+}
+.city {
+    border-style:solid;
+    border-color:lightgrey;
+    border-width: 1px;
+    background-color: rgb(75, 120, 255);
+    border-radius: 15px;
+    margin-top: 4px;
+    color: black;
+    font-weight: bold;
+}
+.fiveDays {
+    border-style:solid;
+    border-color:lightgrey;
+    border-width: 1px;
+    height: 150px;
+    margin: 3px;
+}
+.city-info {
+    background:cyan;
+    
+}
+.city-info2 {
+    background: gray;
+    margin-top: 4px;
+}
+
+@media (max-width: 690px) {
+    .btn {
+      font-size: 1rem;
+      margin: 16px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+  
+    #password {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .btn {
+      font-size: 0.8rem;
+    }

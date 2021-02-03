@@ -34,61 +34,115 @@
                         id="searchText">
                     <button class="btn btn-outline-success" id="citySearch">Search</button>
                 </form>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="atlanta">Atlanta</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="austin">Austin</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="chicago">Chicago</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="nyc">New York City</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="orlando">Orlando</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="philadelphia">Philadelphia</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="seattle">Seattle</button>
                 </div>
-                <div class="city">
+                <div class="citySide">
                     <button class="btn" id="denver">Denver</button>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="city-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="forcast">
-                        <div class="row cols-2">
-                          <div class="col fiveDays">Column</div>
-                          <div class="col fiveDays">Column</div>
-                          <div class="col fiveDays">Column</div>
-                          <div class="col fiveDays">Column</div>
-                          <div class="col fiveDays">Column</div>
+            <div class="col-md-9">
+
+                <div class="row">
+                    <div class="card current">
+                        <div class="card-body">
+                            <p class="currentDay"></p>
+                            <p class="city"></p>
+                            <p class="icon"></p>
+                            <p class="tempFahr"></p>
+                            <p class="humidity"></p>
+                            <p class="windSpeed"></p>
+                            <p class="uv"></p>
                         </div>
-                      </div>
-            
-            
+                    </div>
+                </div>
+                <div class="forcast">
+                    <div class="row">
+                        <div class="card 5days">
+                            <div class="card-body">5-Day Forecast</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card forecast">
+                                <div class="card-body">
+                                    <p class="day1date"></p>
+                                    <p class="day1png"></p>
+                                    <p class="day1temp"></p>
+                                    <p class="day1hum"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card forecast">
+                                <div class="card-body">
+                                    <p class="day2date"></p>
+                                    <p class="day2png"></p>
+                                    <p class="day2temp"></p>
+                                    <p class="day2hum"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card forecast">
+                                <div class="card-body">
+                                    <p class="day3date"></p>
+                                    <p class="day3png"></p>
+                                    <p class="day3temp"></p>
+                                    <p class="day3hum"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card forecast">
+                                <div class="card-body">
+                                    <p class="day4date"></p>
+                                    <p class="day4png"></p>
+                                    <p class="day4temp"></p>
+                                    <p class="day4hum"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card forecast">
+                                <div class="card-body">
+                                    <p class="day5date"></p>
+                                    <p class="day5png"></p>
+                                    <p class="day5temp"></p>
+                                    <p class="day5hum"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-    </div>
     </div>
 
 </body>
 
 <!--JQuery CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Moment CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <!--My javasript source-->
 <script src="./javascript/script.js"></script>
 

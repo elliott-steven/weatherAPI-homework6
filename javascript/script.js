@@ -36,6 +36,7 @@ $(document).ready(function() {
 
                     $(".uvI").text("UV Index: " + uvData.value);
                     $(".uvI").css("background-color", "yellow");
+                        
                 })
             
         })

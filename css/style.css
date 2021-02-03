@@ -16,14 +16,24 @@ body {
     padding-top: 20px;
     
 }
-.forcast {
-    padding-top: 10px;
+
+.5days {
+    margin: 0;
+
+}
+.forecast {
+    padding-top: 20px;
+    background-color: lightsteelblue;
+    border-style: solid;
+    border-color:lightgrey;
+    border-width: 1px;
+    border-radius: 15px;
 }
 .citySide {
     border-style:solid;
     border-color:lightgrey;
     border-width: 1px;
-    background-color: rgb(75, 120, 255);
+    background-color: rgb(202, 202, 202);
     border-radius: 15px;
     margin-top: 4px;
     color: black;
@@ -35,14 +45,6 @@ body {
     border-width: 1px;
     height: 150px;
     margin: 3px;
-}
-.city-info {
-    background:cyan;
-    
-}
-.city-info2 {
-    background: gray;
-    margin-top: 4px;
 }
 
 @media (max-width: 690px) {

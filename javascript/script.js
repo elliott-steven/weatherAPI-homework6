@@ -24,8 +24,22 @@ $(document).ready(function() {
             $(".windSpeed").text("Wind Speed: " + data.wind.speed + " MPH");
             $(".humidity").text("Humidity: " + data.main.humidity + "%");
             console.log(data)
+
+            // Get the UV Index data
+            var lon = data.coord.lon;
+            var lat = data.coord.lat;
+            var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?" + "lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
+        
+            $.ajax({url:uvIndex, method: 'GET'})
+                .then(function(uvData) {
+                    console.log(uvData)
+
+                    $(".uvI").text("UV Index: " + uvData.value);
+                    $(".uvI").css("background-color", "yellow");
+                })
             
         })
+
         // Save stored data for 5-day forecast
         $.ajax({url:localForecast, method: 'GET'}).then(function(data5day){
             console.log(data5day)

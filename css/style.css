@@ -17,12 +17,28 @@ body {
     
 }
 
-.5days {
+.current {
+    background-color: lightgray;
+}
+.card-body {
     margin: 0;
-
+}
+.todaysDate {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+.fiveDaycast {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 12px;
+    margin-top: 18px;
+    padding: 0;
+    
 }
 .forecast {
-    padding-top: 20px;
+    margin:auto;
     background-color: lightsteelblue;
     border-style: solid;
     border-color:lightgrey;

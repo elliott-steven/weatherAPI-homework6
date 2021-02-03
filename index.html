@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Weather App - Homework 6</title>
 </head>
+
 <header>
     <div class="bg-dark">
         <div class="container">
@@ -25,7 +26,7 @@
 </header>
 
 <body>
-
+    <!-- This is the sidebar with the search field and recently searched cities -->
     <div class="wrapper">
         <div class="row">
             <div class="col-3">
@@ -59,26 +60,29 @@
                     <button class="btn" id="denver">Denver</button>
                 </div>
             </div>
-            <div class="col-md-9">
 
+            <!-- This is the main information. The current city and day at the top -->
+            <div class="col-md-9">
+                <div class="card-body todaysDate">
+                    <p class="currentDay"></p>
+                </div>
                 <div class="row">
                     <div class="card current">
                         <div class="card-body">
-                            <p class="currentDay"></p>
                             <p class="cityName"></p>
                             <p class="icon"></p>
                             <p class="tempFahr"></p>
                             <p class="humidity"></p>
                             <p class="windSpeed"></p>
-                            <p class="uv"></p>
+                            <span class="uvI"></span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Here is where ill use cards to create a 5-day forecast -->
                 <div class="5days">
                     <div class="row">
-                        <div class="card 5dayCast">
-                            <div class="card-body">5-Day Forecast</div>
-                        </div>
+                        <div class="card-body fiveDaycast">5-Day Forecast</div>
                     </div>
                     <div class="row">
                         <div class="col-md-2">

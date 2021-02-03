@@ -35,6 +35,7 @@ $(document).ready(function() {
                     console.log(uvData)
 
                     $(".uvI").text("UV Index: " + uvData.value);
+                    //Here should be a if else statement that would change the color of the background color
                     $(".uvI").css("background-color", "yellow");
                         
                 })
@@ -86,7 +87,7 @@ $(document).ready(function() {
         $(".day5hum").text("Humidity: " + data5day.list[32].main.humidity + "%");
         })
     })
-
+   
         
     
 })

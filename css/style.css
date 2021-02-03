@@ -50,6 +50,7 @@ body {
 
 .searchBtn {
     margin-bottom: 20px;
+    min-width: 200px;
 }
 .citySide {
     border-style:solid;
@@ -62,6 +63,7 @@ body {
     margin-right: 10px;
     color: black;
     font-weight: bold;
+    min-width: 200px;
 }
 .fiveDays {
     border-style:solid;
